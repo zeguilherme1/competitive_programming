@@ -1,18 +1,19 @@
 #include <bits/stdc++.h>
-#include <vector>
 using namespace std;
+
+
 int main(){
-    int N;
-    cin >> N;
-    
-    vector<double> numbers(N);
+	int n;
+	cin >> n;
 
-    for(int i = 0; i < N; i++){
-        cin >> numbers[i];
-    }
+	vector<float> array(n);
+	for (int i = 0; i < n; i++){
+		cin >> array[i];
+	}
 
-    for (int i = 0; i < N; i++){
-        cout << fixed << setprecision(4) << sqrt(numbers[i]) << endl;
-    }
-    return 0;
+	for(int k = 0; k < n; k++){
+		cout << fixed << setprecision(4) << sqrt(array[k]) << endl;
+	} 
+	
+	return 0;
 }
